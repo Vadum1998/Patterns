@@ -62,7 +62,7 @@ public class DataGenerator {
             RegistrationDto user = new RegistrationDto(getRandomLogin(), getRandomPassword(), status);
             return user;
         }
-
+        //регистрируем пользователя
         public static RegistrationDto getRegisteredUser(String status) {
             RegistrationDto registeredUser = getUser(status);
             sendRequest(registeredUser);

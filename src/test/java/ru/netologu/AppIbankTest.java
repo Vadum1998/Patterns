@@ -20,7 +20,7 @@ public class AppIbankTest {
 
     @Test
     void shouldSuccessLoginForRegisteredActiveUser1() {
-        var registeredUser= getUser("active");
+        var registeredUser = getRegisteredUser("active");
         $("[data-test-id=login] input").setValue(registeredUser.getLogin());
         $("[data-test-id=password] input").setValue(registeredUser.getPassword());
         $("[data-test-id='action-login']").click();
